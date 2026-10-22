@@ -1,30 +1,183 @@
 <!DOCTYPE html>
-<html>
-<head><title>Kombini Privacy Policy</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kombini — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 47rem; margin: 0 auto; padding: 2.5rem 1.25rem 6rem;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: #1a1d21; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color:#e7ecf3; background:#0e1116; }
+    a { color:#7fb0ff; } .note { background:#161c26; border-color:#243044; } }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.05rem; margin: 2.1rem 0 .6rem; }
+  h3 { font-size: .95rem; margin: 1.3rem 0 .4rem; }
+  .meta { color:#6b7684; font-size:.9rem; margin-bottom:2rem; }
+  ul { padding-left: 1.2rem; } li { margin: .3rem 0; }
+  table { width:100%; border-collapse: collapse; margin: .8rem 0 1.2rem; font-size:.94rem; }
+  th, td { text-align:left; padding:.5rem .55rem; border-bottom:1px solid #d9dee5; vertical-align:top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color:#243044; } th { color:#9aa7b8; } }
+  .note { border:1px solid #e2e7ee; background:#f7f9fc; border-radius:10px; padding:.85rem 1rem; margin:1.2rem 0; font-size:.94rem; }
+  code { background:#f0f3f7; padding:.1rem .35rem; border-radius:4px; font-size:.9em; }
+  @media (prefers-color-scheme: dark) { code { background:#1a2231; } }
+</style>
+</head>
 <body>
-<h1>Privacy Policy for Kombini</h1>
-<p><strong>Last updated:</strong> September 2026</p>
 
-<h2>1. Data We Collect</h2>
-<p>Kombini accesses data from your Whoop and MyFitnessPal accounts, including:</p>
+<h1>Privacy Policy for Kombini</h1>
+<p class="meta"><strong>Last updated:</strong> October 2026 &nbsp;·&nbsp; <strong>Contact:</strong> <a href="mailto:felixpang625@gmail.com">felixpang625@gmail.com</a></p>
+
+<p>Kombini is a personal health-and-performance tool. It pulls your own wearable data
+together with entries you make yourself, and builds models and experiments on top of them
+so you can learn how your body and attention actually respond to what you do. This policy
+explains exactly what Kombini accesses, why, where it is stored, and what control you have.</p>
+
+<div class="note">
+<strong>Plain-language summary.</strong> Kombini reads your WHOOP data with your permission,
+combines it with things you log yourself, and stores the result in your own database.
+It does not sell your data, does not use it for advertising, and does not share it with
+third parties for their own purposes. You can export or delete everything at any time.
+</div>
+
+<h2>1. Who this policy covers</h2>
+<p>This policy applies to the Kombini application and any companion tools (including the
+self-report bot and cognitive task) that connect to your account. It does <strong>not</strong>
+cover WHOOP's own apps and services, which are governed by
+<a href="https://www.whoop.com/legal/privacy-policy/">WHOOP's privacy policy</a>.</p>
+
+<h2>2. Data we collect</h2>
+
+<h3>2.1 Data from connected services (with your explicit authorisation)</h3>
+<p>Kombini connects to the <strong>official WHOOP API</strong> using OAuth 2.0. You approve
+each data category during authorisation, and access is <strong>read-only</strong> — Kombini
+cannot post to, or change, your WHOOP account.</p>
+
+<table>
+  <tr><th>Category</th><th>Examples</th></tr>
+  <tr><td>Recovery &amp; cardiovascular</td><td>Recovery score, heart-rate variability, resting heart rate, respiratory rate, skin temperature, blood oxygen</td></tr>
+  <tr><td>Sleep</td><td>Sleep onset and wake times, sleep duration, sleep stages, sleep performance and consistency, sleep need and debt</td></tr>
+  <tr><td>Strain &amp; activity</td><td>Day strain, workout strain, workout heart rate, energy expenditure, activity type and timing</td></tr>
+  <tr><td>Profile &amp; body</td><td>Basic profile identifiers and body measurements (e.g. height, weight)</td></tr>
+</table>
+
+<p>If you connect any other provider, Kombini accesses only the categories you approve,
+and they are listed in the table above by equivalence.</p>
+
+<h3>2.2 Data you enter yourself</h3>
 <ul>
-<li>Recovery scores, heart rate variability, resting heart rate</li>
-<li>Sleep data (duration, performance)</li>
-<li>Workout data (strain, heart rate)</li>
-<li>Nutrition data (calories, macros)</li>
-<li>Body measurements (weight, height)</li>
+  <li><strong>Self-reports</strong> — mood, focus, perceived stress, alcohol, caffeine timing, screen time, and any free-text notes you choose to add.</li>
+  <li><strong>Cognitive task results</strong> — reaction times, lapse counts and related metrics from the Psychomotor Vigilance Task.</li>
 </ul>
 
-<h2>2. How We Use Your Data</h2>
-<p>We use your data to provide personalized fitness insights and recommendations.</p>
+<h3>2.3 Optional data you may choose to add</h3>
+<ul>
+  <li><strong>Neurophysiological signals</strong> (e.g. EEG band powers) if you connect a headset.</li>
+  <li><strong>Continuous glucose data</strong> if you connect a sensor.</li>
+  <li><strong>Laboratory results</strong> you enter manually.</li>
+</ul>
+<p>These are entirely optional and only collected if you switch them on.</p>
 
-<h2>3. Data Sharing</h2>
-<p>We do not share your personal data with third parties.</p>
+<h3>2.4 Derived data</h3>
+<p>Kombini generates predictions, summaries, effect estimates and experiment results from
+the data above. This derived data is personal data, is treated exactly like its inputs,
+and never leaves your database without your action.</p>
 
-<h2>4. Data Storage</h2>
-<p>Your data is stored securely and encrypted at rest.</p>
+<h3>2.5 What we do <em>not</em> collect</h3>
+<p>Kombini does not collect your contacts, photos, location history, or the contents of
+your messages beyond the self-report entries you deliberately send to the logging channel.
+It does not read game or application memory, and it does not run in the background of
+other software.</p>
 
-<h2>5. Contact</h2>
-<p>Questions? Contact us at: <a href="mailto:felixpang625@gmail.com">felixpang625@gmail.com</a></p>
+<h2>3. How we use your data</h2>
+<p>Kombini uses your data only to:</p>
+<ul>
+  <li>display your own metrics back to you;</li>
+  <li>fit and evaluate personal forecasting models;</li>
+  <li>run randomised single-subject (n-of-1) experiments <em>you</em> design, and report the results;</li>
+  <li>maintain and debug the application.</li>
+</ul>
+<p><strong>Legal bases (where GDPR applies).</strong> We process this data on the basis of your
+<strong>consent</strong> (Art. 6(1)(a)) and, for health-related data, your
+<strong>explicit consent</strong> (Art. 9(2)(a)). You may withdraw consent at any time;
+see Section 7. Kombini does not use your data for automated decision-making that produces
+legal or similarly significant effects.</p>
+
+<h2>4. Where your data is stored</h2>
+<p>Kombini is <strong>local-first</strong>. Your records are stored in a database on your own
+device (or, where you deploy it, on a server you control), encrypted at rest. No copy is
+sent to us or to any third party as part of normal operation.</p>
+<p>If you choose to use a hosted version of Kombini, that deployment is described to you
+before you use it, including its hosting location and retention period.</p>
+
+<h2>5. Sharing and disclosure</h2>
+<ul>
+  <li><strong>We do not sell your personal data.</strong></li>
+  <li><strong>We do not share it for advertising or profiling.</strong></li>
+  <li>We disclose data only if you explicitly instruct us to, or where we are legally compelled (for example, by valid legal process), in which case we will tell you unless prohibited.</li>
+  <li><strong>Service providers.</strong> If you use optional features, the following processors may handle data on your instruction:
+    <ul>
+      <li><strong>WHOOP</strong> — source of wearable data (you authorise this directly with WHOOP).</li>
+      <li><strong>Discord</strong> — transport only, if you use the self-report bot. Messages you send to the logging channel are relayed to your database. Discord's own handling is governed by Discord's privacy policy.</li>
+      <li><strong>Your hosting/LLM provider</strong> — only if you enable an optional feature that sends data to it, and only the minimum required.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>6. Retention</h2>
+<p>Data is retained for as long as you keep it. Kombini does not impose a retention limit
+of its own. You may delete any record, any date range, or your entire database at any time
+(Section 7). Backups, if you enable them, are deleted within 30 days of a deletion request.</p>
+
+<h2>7. Your rights and how to exercise them</h2>
+<p>Subject to applicable law (including the GDPR and the Hong Kong Personal Data (Privacy)
+Ordinance), you have the right to:</p>
+<ul>
+  <li><strong>Access</strong> your data and receive a copy in a portable format;</li>
+  <li><strong>Export</strong> your full dataset at any time (machine-readable export is built in);</li>
+  <li><strong>Rectify</strong> inaccurate entries;</li>
+  <li><strong>Erase</strong> individual records or your entire account and database;</li>
+  <li><strong>Restrict or object</strong> to processing;</li>
+  <li><strong>Withdraw consent</strong> at any time, without affecting the lawfulness of prior processing.</li>
+</ul>
+<p>Because Kombini is local-first, most of these are available directly in the application.
+For anything else, or to disconnect a provider, email
+<a href="mailto:felixpang625@gmail.com">felixpang625@gmail.com</a>. You also have the right
+to complain to your local data-protection authority.</p>
+
+<h2>8. Security</h2>
+<p>Data is encrypted at rest. API credentials and tokens are stored in environment
+configuration, not in the application's source code or database, and OAuth access can be
+revoked by you at any time from the provider's settings. No system is perfectly secure;
+if a breach affecting your data occurs, we will notify you and the relevant authority as
+required by law.</p>
+
+<h2>9. International transfers</h2>
+<p>Normal operation keeps your data on your own device, so no transfer occurs. If you
+enable a hosted or third-party feature that involves a transfer outside your jurisdiction,
+that transfer relies on your consent and appropriate safeguards, and is disclosed to you
+before you enable it.</p>
+
+<h2>10. Children</h2>
+<p>Kombini is not intended for anyone under 18. We do not knowingly collect data from
+children. If you believe a minor has used Kombini, contact us and we will delete the data.</p>
+
+<h2>11. Health disclaimer</h2>
+<p>Kombini is a wellness and self-experimentation tool. It is <strong>not a medical device</strong>
+and does not provide medical advice, diagnosis, or treatment. Metrics such as recovery
+scores are proprietary third-party estimates, not clinical measurements. Always consult a
+qualified healthcare professional about any health concern, and do not use Kombini to
+make medical decisions.</p>
+
+<h2>12. Changes to this policy</h2>
+<p>When this policy changes materially, the "last updated" date will change and, where
+appropriate, we will notify you in the application or by email. Continued use after a
+change constitutes acceptance of the revised policy.</p>
+
+<h2>13. Contact</h2>
+<p>Questions, requests, or complaints:
+<a href="mailto:felixpang625@gmail.com">felixpang625@gmail.com</a>.</p>
+
 </body>
 </html>
